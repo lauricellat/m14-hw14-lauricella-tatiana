@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <!-- your code here -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tatiana Lauricella</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Gallery</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Contact Me</a>
+      </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <div class="container">
+    <div class="row row-cols-2" style="margin-top: 10px;">
+      <div class="col"><h1>Tatiana Lauricella</h1></div>
+      <div class="col"></div>
+      <div class="col"><p class="lead" style="justify-content-center">
+      Hey there! I'm Tatiana, This site is a peek into my hobbies, interests, and career. Let's connect!
+      </p></div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+        <button type="button" class="btn btn-primary" id="liveToastBtn" style="margin-top: 20px; justify-content-center">Join Me Live!</button>
+<div class="position-fixed bottom-0 end-0 p-z" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="Assets/Tatiana.jpg" width=50x height=50px "rounded me-2" alt="...">
+        <strong class="me-auto">Message from Tatiana</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! I will be on IG Live 11/27/23 at 8:00PM EST!
+      </div>
+    </div>
+      </div>
+      <div class="col">
+      </div>
+  
+  <div class="d-grid gap-3">
+    <div class="row my-5">
+      <div class="col-sm p-2 bg-light border"><div class="card" style="justify-content-center width: 18rem; padding: auto;">
+        <img src="Assets/travel.jpg" height="200" width="auto" class="card-img-top" alt="travel image">
+        <div class="card-body">
+          <h5 class="card-title">Interests</h5>
+          <p class="card-text"> I am very interested in travel. I love exploring new places and experiencing different cultures excites me. From stunning landscapes to unique local flavors, each trip is an adventure that brings joy and lasting memories. Below are trips I plan to take in the next 3 years.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Canada</li>
+          <li class="list-group-item">France</li>
+          <li class="list-group-item">Ireland</li>
+        </ul>
+      </div></div>
+      <div class="col-sm p-2 bg-light border"><div class="card" style="justify-content-center width: 18rem;">
+        <img src="Assets/makeup.jpg" height=200 width=auto ="card-img-top" alt="image of makeup">
+        <div class="card-body">
+          <h5 class="card-title">Hobbies</h5>
+          <p class="card-text">
+            My #1 hobby is creating video content about makeup! My videos consist of makeup tutorials, techniques, tips and product reviews. You can find my videos on the following platforms.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Instagram</li>
+          <li class="list-group-item">Tiktok</li>
+          <li class="list-group-item">Youtube</li>
+        </ul>
+      </div></div>
+      <div class="col-sm p-2 bg-light border"><div class="card" style="justify-content-center 18rem;">
+        <img src="Assets/work.jpg"height=200 width=auto ="card-img-top" alt="work image">
+        <div class="card-body">
+          <h5 class="card-title">Career</h5>
+          <p class="card-text">I have a fulfilling career in instructional design, where I design engaging and effective learning experiences. My role involves creating educational materials, designing courses, and incorporating innovative technologies. The main autoring tools I use to create courses are: </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Rise 360</li>
+          <li class="list-group-item">Storyline</li>
+          <li class="list-group-item">Captivate</li>
+        </ul>
+      </div></div>
+    </div>
+  </div>
+</main>
+<script>var toastTrigger = document.getElementById('liveToastBtn')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
+  
+      toast.show()
+    })
+  }</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
